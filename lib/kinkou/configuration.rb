@@ -6,7 +6,7 @@ module Kinkou
 
     attr_accessor :name, :files, :execution_times
     attr_accessor :session, :node_total, :node_index
-    attr_accessor :globs
+    attr_accessor :globs, :url
 
     def initialize
       @name  = ENV['KINKOU_NAME']
@@ -15,6 +15,7 @@ module Kinkou
       @node_index = Integer(ENV['CIRCLE_NODE_INDEX'] || ENV['CI_NODE_INDEX'] || 0)
       @globs = []
       @files = []
+      @url = ENV['KINKOU_URL']
 
       @execution_times = Hash.new(0)
     end

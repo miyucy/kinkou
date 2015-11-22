@@ -11,7 +11,7 @@ module Kinkou
         node_index: config.node_index,
         files:      config.files,
       }
-      response = HTTPClient.new.post 'http://localhost:9292/builds', JSON.dump(payload), 'Content-Type' => 'application/json'
+      response = HTTPClient.new.post config.url + '/builds', JSON.dump(payload), 'Content-Type' => 'application/json'
       files = nil
       if response.ok?
         files = JSON.parse(response.body)['files']
@@ -27,7 +27,7 @@ module Kinkou
         session: config.session,
         files:   config.execution_times
       }
-      HTTPClient.new.post 'http://localhost:9292/results', JSON.dump(payload), 'Content-Type' => 'application/json'
+      HTTPClient.new.post config.url + '/results', JSON.dump(payload), 'Content-Type' => 'application/json'
     end
   end
 end
