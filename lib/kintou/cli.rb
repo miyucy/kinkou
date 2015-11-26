@@ -2,7 +2,7 @@ require 'optparse'
 require_relative 'configuration'
 require_relative 'api'
 
-module Kinkou
+module Kintou
   class CLI
     def self.perform
       new(ARGV).perform

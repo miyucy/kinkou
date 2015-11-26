@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'kinkou/version'
+require 'kintou/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "kinkou"
-  spec.version       = Kinkou::VERSION
+  spec.name          = "kintou"
+  spec.version       = Kintou::VERSION
   spec.authors       = ["miyucy"]
   spec.email         = ["fistfvck@gmail.com"]
 
   spec.summary       = %q{Write a short summary, because Rubygems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "https://github.com/miyucy/kinkou"
+  spec.homepage      = "https://github.com/miyucy/kintou"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

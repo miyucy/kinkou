@@ -1,12 +1,12 @@
 require 'json'
 require 'httpclient'
-require 'kinkou/version'
-require 'kinkou/tracker'
-require 'kinkou/configuration'
+require 'kintou/version'
+require 'kintou/tracker'
+require 'kintou/configuration'
 
-module Kinkou
+module Kintou
   def self.bind
-    Kinkou::Tracker.bind
+    Kintou::Tracker.bind
   end
 
   def self.configure

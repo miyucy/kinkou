@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Kinkou do
+describe Kintou do
   it 'has a version number' do
-    expect(Kinkou::VERSION).not_to be nil
+    expect(Kintou::VERSION).not_to be nil
   end
 
   it 'does something useful' do

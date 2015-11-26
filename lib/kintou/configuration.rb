@@ -1,6 +1,6 @@
 require 'singleton'
 
-module Kinkou
+module Kintou
   class Configuration
     include Singleton
 
@@ -9,13 +9,13 @@ module Kinkou
     attr_accessor :globs, :url
 
     def initialize
-      @name  = ENV['KINKOU_NAME']
+      @name  = ENV['KINTOU_NAME']
       @session = String(ENV['CIRCLE_BUILD_NUM'] || ENV['BUILD_NUMBER'])
       @node_total = Integer(ENV['CIRCLE_NODE_TOTAL'] || ENV['CI_NODE_TOTAL'] || 1)
       @node_index = Integer(ENV['CIRCLE_NODE_INDEX'] || ENV['CI_NODE_INDEX'] || 0)
       @globs = []
       @files = []
-      @url = ENV['KINKOU_URL']
+      @url = ENV['KINTOU_URL']
 
       @execution_times = Hash.new(0)
     end

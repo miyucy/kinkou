@@ -1,7 +1,7 @@
 require 'json'
 require 'httpclient'
 
-module Kinkou
+module Kintou
   module API
     def self.builds(config)
       payload = {

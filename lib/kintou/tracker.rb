@@ -2,7 +2,7 @@ require 'singleton'
 require_relative 'configuration'
 require_relative 'api'
 
-module Kinkou
+module Kintou
   class Tracker
     include Singleton
 

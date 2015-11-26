@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # -*- mode: ruby -*-
 $LOAD_PATH.unshift(File.expand_path(__dir__ + '/../lib'))
-require 'kinkou'
-require 'kinkou/cli'
+require 'kintou'
+require 'kintou/cli'
 
-Kinkou::CLI.perform
+Kintou::CLI.perform
